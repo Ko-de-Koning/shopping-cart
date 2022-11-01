@@ -22,7 +22,7 @@ type ShoppingCartContext = {
     cartItems: CartItem[]
 }
 
-const ShoppingCartContext = createContext({})
+const ShoppingCartContext = createContext({} as ShoppingCartContext)
 
 export function useShoppingCart(){
     return useContext(ShoppingCartContext)
